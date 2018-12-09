@@ -1,0 +1,74 @@
+
+@import "_variables";
+@import "_helpers";
+@import "fonts/font-awesome/css/font-awesome.min.css";
+
+
+// Bootstrap
+@import (less) "libs/bootstrap.css";
+
+
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: @ff_text;
+    font-size: @fz_text;
+    color: @text_color;
+    background: @white;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: @ff_h;
+    font-weight: bold;
+    color: @h_color;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+a, input {
+    &:focus {
+        outline: none;
+    }
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    outline: 0;
+}
+
+
+
+/* Vendor libs import
+==============================*/
+@import "libs/slick";
+
+
+/* Project Elements
+==============================*/
+@import "_elements";
+
+
+
+/* Pages import
+==============================*/
+@import "pages/home";
+@import "pages/portfolio.less";
+
+
+
+

@@ -1,0 +1,26 @@
+
+
+.-block  {display: block;}
+.-hidden {display: none;}
+.-rel    {position: relative;}
+
+.square(@s) {
+    width: @s;
+    height: @s;
+}
+
+.before() {
+    content: '';
+    position: absolute;
+    display: inline-block;
+}
+
+.outline() {
+    &:focus {
+        outline: 0;
+    }
+}
+
+a.active {
+    color: @accent_color;
+}

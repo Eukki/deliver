@@ -1,0 +1,394 @@
+
+
+
+/*===========================
+Table of Content
+
+1. Buttons
+2. Social
+3. Header
+4. Footer
+===========================*/
+
+
+
+/* 1. Buttons
+===========================*/
+
+.-button {
+    height: 40px;
+    width: 120px;
+
+    margin: 0 auto;
+
+    border: 2px solid @white;
+
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 36px;
+
+     transition: background-color ease-in-out .2s 0s;
+
+    &:hover {
+        background-color: @accent_color;
+        border: none;
+        line-height: 40px;
+    }
+}
+
+.-button_a {
+    display: block;
+    color: @white;
+
+    &:hover {
+        text-decoration: none;
+        color: @white;
+    }
+}
+
+
+/* 2. Social
+===========================*/
+
+.-social_bg {
+    display: inline-block;
+    height: 38px;
+    width: 38px;
+
+    margin-right: 5px;
+
+    border-radius: 50px;
+
+    background: #dfdfdf;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.-social_item {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    color: @white;
+
+    &:hover {
+        color: @h_color;
+    }
+}
+
+.-icon_pos {
+    position: absolute;
+    margin: 12px 10px;
+}
+
+.-icon_facebook {
+    margin-left: 12px;
+}
+
+
+/* 3. Header
+===========================*/
+
+.header-main {
+    min-height: 207px;
+
+    color: @h_color;
+}
+
+
+// Top
+
+.header-main__top {
+    margin-top: 38px;
+    padding-bottom: 38px;
+
+    border-bottom: @gray 1px solid;
+}
+
+.header-main__logo {
+    display: inline-block;
+    
+    font-family: @ff_logo;
+    font-size: @fz_h1;
+    text-transform: capitalize;
+    color: @h_color;
+}
+
+
+// Social
+
+.header-main__social {
+    float: right;
+    margin-top: 7px;
+
+    height: 38px;
+    width: 150px;
+
+}
+
+
+// Navigation
+
+.header-main__nav {
+    margin-top: 30px;
+}
+
+.-main_nav_item {
+    display: inline-block;
+
+    margin-left: 40px;
+
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.-main_nav_item_a {
+    color: @h_color;
+
+    &:hover {
+        color: @accent_color;
+        text-decoration: none;
+
+    }
+}
+
+.header-main__search {
+    float: right;
+    margin-top: 28px;
+
+    background: url('../i/search.png') no-repeat center;
+}
+
+._search_inp {
+    width: 20px;
+
+    color: #000;
+
+    border: none;
+    opacity: 0;
+
+    transition: all ease-in-out .3s 0s;
+
+    &:focus {
+        width: 150px;
+        padding-left: 5px;
+
+        border-radius: 2px;
+        opacity: 1;
+    }
+}
+
+// Title
+
+.-title {
+    height: 100px;
+
+    background: url('../i/title.jpg') no-repeat center;
+    background-position: cover;
+}
+
+.-title__h1 {
+    margin-top: 28px;
+    color: @white;
+}
+
+
+
+/* 4. Footer
+===========================*/
+
+.footer {
+    height: 360px;
+    
+    font-size: @fz_footer;
+    line-height: 1.8em;
+
+    background: #333;
+
+    & a {
+        color: @text_color;
+        &:hover {
+            color: @accent_color;
+            text-decoration: none;
+        }
+    }
+}
+
+
+// Head
+
+.footer__head {
+    margin: 50px 0 50px;
+}
+
+.footer__item {
+    margin-left: 30px;
+}
+
+.footer__h3 {
+    margin-bottom: 25px;
+
+    color: @white;
+}
+
+
+// Col 1
+
+.footer__item_first {
+    margin-top: 20px;
+}
+
+.footer__logo:extend(.header__logo) {
+    color: @white;
+    line-height: 52px;
+}
+
+.footer__social {
+    display: inline-block;
+    float: right;
+
+    margin-top: 8px;
+}
+
+.footer-social_bg:extend(.-social_bg) {
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.footer-social_item:extend(.-social_item) {
+    & i {
+        color: #333;
+    }
+}
+
+.footer-icon_pos:extend(.-icon_pos) {
+    margin: 13px 12px;
+}
+
+.footer-icon_twitter {
+    margin-left: 10px;
+}
+
+// Col 2
+
+.footer__contacts {
+    font-style: normal;
+}
+
+.footer__contacts_item {
+    margin-top: 12px;
+
+    & .footer__phone_a {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: @white;
+    }
+}
+
+
+// Col 3
+
+.footer__links {
+    margin-left: 40px;
+}
+
+.footer__ul {
+    list-style-image: url('../i/ul_arrow.png');
+    margin-left: 17px;
+}
+
+
+// Col 4
+
+.footer__news_p {
+    font-family: @ff_serif;
+}
+
+.footer__inp_mail {
+    height: 40px;
+    width: 160px;
+    padding-left: 10px;
+
+    border: none;
+
+    font-size: 15px;
+    color: @white;
+
+    background: #4e4c4c;
+}
+
+.footer__inp_button {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+
+    margin-left: 5px;
+
+    border: none;
+
+    color: @white;
+    text-transform: uppercase;
+
+    background: #828282;
+
+    &:hover {
+        background: @accent_color;
+    }
+}
+
+.footer__button_a {
+
+}
+
+
+// Bottom
+
+.footer__bottom {
+    border-top: 1px solid @text_color;
+    font-size: 12px;
+}
+
+
+// Left
+
+.footer__bottom_p {
+    display: inline-block;
+    margin-top: 20px;
+
+    font-family: @ff_serif;
+    text-transform: uppercase;
+
+    & span {
+        color: @white;
+    }
+}
+
+
+// Right
+
+.footer__bottom_a {
+    float: right;
+    margin-top: 20px;
+}
+
+.footer__bottom_item {
+    display: inline-block;
+    margin-left: 5px;
+
+    font-weight: bold;
+    text-transform: uppercase;
+
+    & span {
+        margin-left: 5px;
+    }
+}
